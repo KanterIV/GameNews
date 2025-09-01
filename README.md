@@ -1,0 +1,1 @@
+# Game news - single page application

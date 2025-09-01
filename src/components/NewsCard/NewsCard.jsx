@@ -12,8 +12,10 @@ const NewsCard = ({ title, image, date, description }) => {
     <article className="news-card">
       {image && <img src={image} alt={title} className="news-card__image" />}
       <div className="news-card__content">
-        <h2 className="news-card__title">{title}</h2>
-        {description && <p className="news-card__desc">{description}</p>}
+        <div className="content__wrapper">
+          <h2 className="news-card__title">{title}</h2>
+            {description && <p className="news-card__desc">{description}</p>}
+        </div>
         {formattedDate && (
           <time className="news-card__date" dateTime={date}>
             {formattedDate}
